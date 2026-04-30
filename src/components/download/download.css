@@ -1,0 +1,39 @@
+.download {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 220px;
+}
+
+.download__container-textMain {
+    width: 507hug;
+    margin-top: 181px;
+}
+
+.download__text {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 41px;
+    text-transform: uppercase;
+}
+
+.download__text-second {
+    font-size: 24px;
+    margin-bottom: 65px;
+}
+
+.download__phone {
+    width: 671px;
+}
+
+.download__icons {
+    display: flex;
+    gap: 19px;
+}
+
+.download__icon1 {
+    width: 236px;
+}
+
+.download__icon2 {
+    width: 236px;
+}

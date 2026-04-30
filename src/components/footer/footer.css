@@ -1,0 +1,75 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 119px 0 147px;
+  background-color: black;
+  color: white;
+}
+
+.footer__fashion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 100px;
+}
+
+.footer__text {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__fashion-text1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: auto;
+  font-weight: 900;
+  padding-bottom: 32px;
+}
+
+.footer__fashion-text2 {
+  width: 270px;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: auto;
+  font-weight: 400;
+  padding-bottom: 32px;
+  color: #8e8e8e;
+}
+
+.fashion__logos {
+  display: flex;
+  gap: 14px;
+  width: 52hug;
+  height: 52hug;
+}
+
+.fashion__company a {
+  color: white;
+}
+
+.fashion__company ul {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fashion__company li {
+  margin-bottom: 14px;
+  width: 270px;
+}
+
+.fashion__company span {
+  color: #d9d9d9;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.fashion__company a {
+  color: #8e8e8e;
+  text-decoration: none;
+}

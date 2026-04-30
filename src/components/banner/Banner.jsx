@@ -10,7 +10,9 @@ const Banner = () => {
             <img src={imgBanner} alt="banner" />
           </div>
           <div className="banner__text">
-            <span className="banner__highlight-white">payday</span>
+            <span className="banner__highlight-white">
+              <span>payday</span>
+            </span>
             <span className="banner__highlight">Sale now</span>
             <span className="banner__text_info1">
               <span>Spend minimal $100 get 30% off</span>

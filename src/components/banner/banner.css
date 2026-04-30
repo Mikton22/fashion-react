@@ -20,10 +20,32 @@
 }
 
 .banner__highlight-white {
+  position: relative;
+  display: inline-block;
   text-transform: uppercase;
   font-size: 96px;
   font-weight: 900;
   line-height: calc(120 / 96);
+}
+
+.banner__highlight-white span {
+  position: relative;
+  z-index: 2;
+}
+
+.banner__highlight-white::before {
+  color: black;
+  background-color: #fff;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -0px;
+  bottom: -0px;
+  left: -20px;
+  right: -60px;
+  transform: rotate(-3deg);
+  width: 450px;
+  z-index: 1;
 }
 
 .banner__highlight {

@@ -1,14 +1,20 @@
 .young {
-    padding: 190px 100px 220px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 190px 100px 206px 100px;
 }
 
 .young__header {
-    font-size: 48px;
-    padding-bottom: 118px;
-    font-weight: 800;
+  font-size: 48px;
+  padding-bottom: 118px;
+  font-weight: 800;
 }
 
 .young__slider {
-    display: flex;
-    gap: 47px;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  gap: 47px;
 }
