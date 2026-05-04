@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./login.css";
 
 function Login() {
+  const [success, setSuccess] = useState(false);
+
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -43,13 +45,24 @@ function Login() {
       setErrors(validationErrors);
     } else {
       setErrors({});
-      console.log("SUCCESS:", form);
+      console.log("Result:", form);
+    }
+
+    // fake login
+    if (form.email === "test@mail.com" && form.password === "123456") {
+      setSuccess(true);
+      setErrors({});
+    } else {
+      setErrors({
+        general: "Неверный email или пароль",
+      });
     }
   };
 
   return (
     <div className="login">
       <div className="login__box">
+      {success && <div className="login__success">Успешный вход</div>}
         <h1>Login</h1>
         <input
           name="email"
@@ -76,6 +89,9 @@ function Login() {
         >
           Sign in
         </button>
+        {errors.general && (
+          <span className="login__error">{errors.general}</span>
+        )}
         <span className="login__or">or</span>
         <button className="login__btn login__btn--secondary">Sign up</button>
       </div>

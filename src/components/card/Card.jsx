@@ -4,7 +4,6 @@ import arrowImg from "./../../img/icons/arrow.svg";
 const Card = ({ title, img }) => {
   return (
     <>
-      <a href="#" className={styles.card}>
         <img src={img} alt={title} className={styles.card__img} />
 
         <div className={styles.card__body}>
@@ -17,7 +16,6 @@ const Card = ({ title, img }) => {
             <img src={arrowImg} alt="" />
           </div>
         </div>
-      </a>
     </>
   );
 };
