@@ -3,14 +3,23 @@
 }
 
 .banner__img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.banner__img img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
 
 .banner__content {
-  background-color: var(--yellow);
   display: flex;
+  background-color: var(--yellow);
   align-items: center;
+  justify-content: space-between;
 }
 
 .banner__text {
