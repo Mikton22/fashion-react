@@ -16,23 +16,23 @@ const Footer = () => {
         </span>
         <div className="fashion__logos">
           <span>
-            <a href="#">
-              <img src={fb} alt="fb" />
+            <a href="https://facebook.com">
+              <img src={fb} alt="facebook.com" />
             </a>
           </span>
           <span>
-            <a href="#">
-              <img src={inst} alt="fb" />
+            <a href="https://instagram.com">
+              <img src={inst} alt="instagram.com" />
             </a>
           </span>
           <span>
-            <a href="#">
-              <img src={tw} alt="fb" />
+            <a href="https://x.com">
+              <img src={tw} alt="x.com" />
             </a>
           </span>
           <span>
-            <a href="#">
-              <img src={inlogo} alt="fb" />
+            <a href="https://linkedin.com">
+              <img src={inlogo} alt="linkedin.com" />
             </a>
           </span>
         </div>
@@ -44,16 +44,16 @@ const Footer = () => {
               <span>Company</span>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="/about">About</a>
             </li>
             <li>
-              <a href="#">Contact us</a>
+              <a href="/contact">Contact us</a>
             </li>
             <li>
-              <a href="#">Support</a>
+              <a href="/support">Support</a>
             </li>
             <li>
-              <a href="#">Careers</a>
+              <a href="/careers">Careers</a>
             </li>
           </ul>
         </div>

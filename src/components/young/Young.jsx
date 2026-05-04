@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Card from "../card/Card";
 import "./young.css";
 import promo01 from "../../img/images/promo-01.jpg";
@@ -9,8 +10,16 @@ const Young = () => {
       <div className="young__block">
         <div className="young__header">Young’s Favourite</div>
         <div className="young__slider">
-          <Card title={"Trending on instagram"} img={promo01} />
-          <Card title={"All Under $40"} img={promo02} />
+          <Link to={"/Login"}>
+            <div>
+              <Card title={"Trending on instagram"} img={promo01} />
+            </div>
+          </Link>
+          <Link to={"/Login"}>
+            <div>
+              <Card title={"All Under $40"} img={promo02} />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

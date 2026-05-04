@@ -1,0 +1,134 @@
+.career {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+/* HERO */
+.career__hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.career__hero h1 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.career__hero p {
+  font-size: 18px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* BENEFITS */
+.career__benefits {
+  margin-bottom: 60px;
+}
+
+.career__benefits h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.career__benefits ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.career__benefits li {
+  background: #f7f7f7;
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* VACANCIES */
+.career__vacancies {
+  margin-bottom: 60px;
+}
+
+.career__vacancies h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.career__vacancy {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  transition: 0.2s ease;
+}
+
+.career__vacancy:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.career__vacancy h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.career__vacancy p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.career__vacancy span {
+  font-size: 14px;
+  color: #888;
+}
+
+/* CTA */
+.career__cta {
+  text-align: center;
+  background: #111;
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 14px;
+}
+
+.career__cta h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.career__cta p {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.career__button {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.career__button:hover {
+  opacity: 0.85;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .career__hero h1 {
+    font-size: 32px;
+  }
+
+  .career__benefits ul {
+    grid-template-columns: 1fr;
+  }
+}

@@ -12,12 +12,12 @@ const Brands = () => {
       <div className="container">
         <ul className="brands__list">
           <li>
-            <a href="#">
+            <a href="https://www2.hm.com/">
               <img src={hm} alt="hm" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://obeyclothing.com/">
               <img src={obey} alt="obey" />
             </a>
           </li>

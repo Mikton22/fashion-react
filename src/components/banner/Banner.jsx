@@ -1,4 +1,5 @@
 import "./banner.css";
+import { Link } from "react-router-dom";
 import imgBanner from "./../../img/images/promo-img.jpg";
 
 const Banner = () => {
@@ -24,9 +25,11 @@ const Banner = () => {
               *Terms & Conditions apply
             </span>
             <div className="banner__btn">
-              <button>
-                <span>shop now</span>
-              </button>
+              <Link to={"/Login"}>
+                <button>
+                  <span>shop now</span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./download.css";
 import phone from "../../img/images/vouchers-img.png";
 import ios from "../../img/icons/app-store.png";
@@ -18,12 +19,16 @@ const Download = () => {
           <span>Rondovision mobile app for now.</span>
         </div>
         <div className="download__icons">
-          <div className="download__icon1">
-            <img src={ios} alt="ios" />
-          </div>
-          <div className="download__icon2">
-            <img src={android} alt="android" />
-          </div>
+          <Link to={"/Login"}>
+            <div className="download__icon1">
+              <img src={ios} alt="ios" />
+            </div>
+          </Link>
+          <Link to={"/Login"}>
+            <div className="download__icon2">
+              <img src={android} alt="android" />
+            </div>
+          </Link>
         </div>
       </div>
       <div className="download__phone">

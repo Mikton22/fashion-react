@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./arrivals.css";
 import Card from "../card/Card";
 import cat01Img from "./../../img/categories/cat-01.jpg";
@@ -12,15 +14,21 @@ const Arrivals = () => {
           <h2 className="title-2">new arrivals</h2>
         </div>
         <div className="arrivals__cards">
-          <div>
-            <Card title="Hoodies & Sweetshirt" img={cat01Img} />
-          </div>
-          <div>
-            <Card title="Coats & Parkas" img={cat02Img} />
-          </div>
-          <div>
-            <Card title="Tees & T-Shirt" img={cat03Img} />
-          </div>
+          <Link to={"/Login"}>
+            <div>
+              <Card title="Hoodies & Sweetshirt" img={cat01Img} />
+            </div>
+          </Link>
+          <Link to={"/Login"}>
+            <div>
+              <Card title="Coats & Parkas" img={cat02Img} />
+            </div>
+          </Link>
+          <Link to={"/Login"}>
+            <div>
+              <Card title="Tees & T-Shirt" img={cat03Img} />
+            </div>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,24 +1,29 @@
-import Arrivals from "./components/arrivals/Arrivals";
-import Banner from "./components/banner/Banner";
-import BaseFooter from "./components/baseFooter/BaseFooter";
-import Brands from "./components/brands/Brands";
-import Download from "./components/download/Download";
-import Footer from "./components/footer/Footer";
+import { Routes, Route } from "react-router-dom";
+
 import Header from "./components/header/Header";
-import Promo from "./components/promo/Promo";
-import Young from "./components/young/Young";
+import Footer from "./components/footer/Footer";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Careers from "./pages/careers/Careers";
+import About from './pages/about/About'
+import Support from './pages/support/Support'
+import Contact from './pages/contact/Contact'
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Promo />
-      <Brands />
-      <Arrivals />
-      <Banner />
-      <Young />
-      <Download />
-      <BaseFooter />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+
+      </Routes>
+
       <Footer />
     </div>
   );

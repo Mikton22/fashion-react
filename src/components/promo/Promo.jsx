@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./promo.css";
 import promoImg from "./../../img/images/header-img.jpg";
 
@@ -23,9 +24,11 @@ const Promo = () => {
             </div>
             <div className="promo-btn">
               <span className="promo__btn-decor"></span>
-              <button className="promo__btn-wrapper">
-                <span>Shop Now</span>
-              </button>
+              <Link to={"/Login"}>
+                <button className="promo__btn-wrapper">
+                  <span>Shop Now</span>
+                </button>
+              </Link>
             </div>
           </div>
           <div className="promo__img">
