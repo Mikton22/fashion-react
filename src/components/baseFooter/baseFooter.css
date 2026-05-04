@@ -83,3 +83,80 @@
   width: 161px;
   height: 67px;
 }
+
+/* ===== 1200px ===== */
+@media (max-width: 1200px) {
+  .baseFooter__text {
+    padding-top: 100px;
+  }
+
+  .baseFooter__text-main1,
+  .baseFooter__text-main2 {
+    font-size: 42px;
+  }
+
+  .baseFooter__text-second {
+    font-size: 24px;
+  }
+
+  .baseFooter__callback-box {
+    width: 480px;
+    height: 75px;
+  }
+
+  .baseFooter__callback-text {
+    font-size: 20px;
+  }
+
+  .baseFooter__callback-button {
+    width: 140px;
+    height: 60px;
+  }
+
+  .baseFooter__callback-button span {
+    font-size: 24px;
+  }
+}
+
+/* ===== 768px ===== */
+@media (max-width: 768px) {
+  .baseFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .baseFooter__text {
+    padding-top: 80px;
+  }
+
+  .baseFooter__text-main1,
+  .baseFooter__text-main2 {
+    font-size: 28px;
+  }
+
+  .baseFooter__text-second {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .baseFooter__callback-box {
+    width: 100%;
+    max-width: 420px;
+    height: 70px;
+  }
+
+  .baseFooter__callback-text {
+    font-size: 16px;
+  }
+
+  .baseFooter__callback-button {
+    width: 120px;
+    height: 55px;
+  }
+
+  .baseFooter__callback-button span {
+    font-size: 18px;
+  }
+}

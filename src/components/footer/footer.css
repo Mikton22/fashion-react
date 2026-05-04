@@ -73,3 +73,77 @@
   color: #8e8e8e;
   text-decoration: none;
 }
+
+/* 1400px */
+/* ======================= */
+@media (max-width: 1400px) {
+  .footer {
+    flex-direction: column;
+    gap: 50px;
+    padding: 80px 40px;
+  }
+
+  .footer__fashion {
+    padding-left: 0;
+  }
+
+  .footer__text {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+}
+
+/* 992px */
+/* ======================= */
+@media (max-width: 992px) {
+  .footer__fashion-text1 {
+    font-size: 32px;
+  }
+
+  .footer__fashion-text2 {
+    font-size: 18px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .fashion__company li {
+    width: 220px;
+  }
+}
+
+/* 768px */
+/* ======================= */
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 20px;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__text {
+    flex-direction: column;
+    gap: 35px;
+    padding-left: 45%;
+  }
+
+  .footer__fashion {
+    align-items: center;
+    text-align: center;
+  }
+
+  .fashion__logos {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .fashion__company ul {
+    gap: 20px;
+  }
+
+  .fashion__company li {
+    width: 100%;
+  }
+}

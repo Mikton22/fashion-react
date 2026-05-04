@@ -8,3 +8,37 @@
   column-gap: 120px;
   mix-blend-mode: multiply;
 }
+
+/* ===== 1400px ===== */
+@media (max-width: 1400px) {
+    .brands__list {
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    row-gap: 20px;
+  }
+}
+
+/* ===== 1200px ===== */
+@media (max-width: 1200px) {
+  .brands__list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    row-gap: 30px;
+  }
+}
+
+/* ===== 768px ===== */
+@media (max-width: 768px) {
+  .brands__list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    row-gap: 20px;
+  }
+}
