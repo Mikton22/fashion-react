@@ -1,13 +1,81 @@
+import { useState } from "react";
 import "./login.css";
 
 function Login() {
+  const [form, setForm] = useState({
+    email: "",
+    password: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const validate = () => {
+    const newErrors = {};
+
+    // email
+    if (!form.email) {
+      newErrors.email = "Введите email";
+    } else if (!/\S+@\S+\.\S+/.test(form.email)) {
+      newErrors.email = "Некорректный email";
+    }
+
+    // password
+    if (!form.password) {
+      newErrors.password = "Введите пароль";
+    } else if (form.password.length < 6) {
+      newErrors.password = "Минимум 6 символов";
+    }
+
+    return newErrors;
+  };
+
+  const handleSubmit = () => {
+    const validationErrors = validate();
+
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+    } else {
+      setErrors({});
+      console.log("SUCCESS:", form);
+    }
+  };
+
   return (
     <div className="login">
       <div className="login__box">
         <h1>Login</h1>
-        <input placeholder="Email" />
-        <input placeholder="Password" type="password" />
-        <button className="login__btn login__btn--primary">Sign in</button>
+        <input
+          name="email"
+          value={form.email}
+          onChange={handleChange}
+          placeholder="Email"
+        />
+        {errors.email && <span className="login__error">{errors.email}</span>}
+
+        <input
+          name="password"
+          value={form.password}
+          onChange={handleChange}
+          placeholder="Password"
+          type="password"
+        />
+        {errors.password && (
+          <span className="login__error">{errors.password}</span>
+        )}
+
+        <button
+          className="login__btn login__btn--primary"
+          onClick={handleSubmit}
+        >
+          Sign in
+        </button>
         <span className="login__or">or</span>
         <button className="login__btn login__btn--secondary">Sign up</button>
       </div>
