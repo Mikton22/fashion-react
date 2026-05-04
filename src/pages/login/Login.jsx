@@ -2,20 +2,28 @@ import { useState } from "react";
 import "./login.css";
 
 function Login() {
-  const [success, setSuccess] = useState(false);
-
   const [form, setForm] = useState({
     email: "",
     password: "",
   });
 
+  const [success, setSuccess] = useState(false);
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
+
     setForm({
       ...form,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
+
+    // очистка ошибки при вводе
+    setErrors((prev) => ({
+      ...prev,
+      [name]: "",
+      general: "",
+    }));
   };
 
   const validate = () => {
@@ -59,10 +67,13 @@ function Login() {
     }
   };
 
+  const isDisabled =
+    !form.email || !form.password || Object.values(errors).some(Boolean);
+
   return (
     <div className="login">
       <div className="login__box">
-      {success && <div className="login__success">Успешный вход</div>}
+        {success && <div className="login__success">Успешный вход</div>}
         <h1>Login</h1>
         <input
           name="email"
@@ -85,6 +96,7 @@ function Login() {
 
         <button
           className="login__btn login__btn--primary"
+          disabled={isDisabled}
           onClick={handleSubmit}
         >
           Sign in
